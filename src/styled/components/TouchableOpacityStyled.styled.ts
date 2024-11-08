@@ -4,7 +4,6 @@ import { colors } from "../theme";
 interface InputPropsContainer {
   readonly marginTop?: number;
   readonly marginBottom?: number;
-  readonly widthPercentage?: number;
   readonly alignItemsCenter?: boolean;
   readonly backgroundColor?: keyof colors;
   readonly directionRow?: boolean;
@@ -16,8 +15,7 @@ interface InputPropsContainer {
   readonly marginRight?: number;
 }
 
-export const ContainerStyled = styled.View<InputPropsContainer>`
-  width: ${({ widthPercentage }) => widthPercentage ?? 100}%;
+export const TouchableOpacityStyled = styled.TouchableOpacity<InputPropsContainer>`
   align-items: ${({ alignItemsCenter = true }) =>
     alignItemsCenter ? "center" : "start"};
   justify-content: ${({ justifyContentCenter }) =>

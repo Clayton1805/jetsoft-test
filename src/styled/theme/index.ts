@@ -10,12 +10,11 @@ export type colors = {
   black: string;
   green: string;
 };
+
 export type spaces = {
   header: number;
 };
-export type fonts = {
-  // questrial: string;
-};
+
 export type fontSize = {
   medium: number;
   button: number;
@@ -29,7 +28,6 @@ declare module "styled-components/native" {
   export interface DefaultTheme {
     colors: colors;
     spaces: spaces;
-    fonts: fonts;
     fontSize: fontSize;
   }
 }
@@ -46,9 +44,6 @@ export const theme: DefaultTheme = {
   },
   spaces: {
     header: 56,
-  },
-  fonts: {
-    // questrial: "Questrial_400Regular",
   },
   fontSize: {
     medium: 20,

@@ -14,4 +14,6 @@ export const InputStyled = styled.TextInput<InputProps>`
     theme.colors[backgroundColor]};
   color: ${({ theme, color = "white" }) => theme.colors[color]};
   padding: 10px;
+  border-radius: 5px;
+  margin-bottom: 5px;
 `;
